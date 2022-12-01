@@ -1,0 +1,39 @@
+@import "./src/assets/scss/colors";
+
+.u-sidebar {
+  height: 100%;
+  padding: 0 20px;
+  overflow-y: auto;
+  background-color: $c-bright-gray;
+
+  .sidebar__section {
+    margin: 20px 0;
+  }
+
+  .sidebar__section-content {
+    margin: 0 0 20px;
+
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+
+  .sidebar__section-title {
+    margin: 0 0 20px;
+    padding: 0 0 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: $c-sherpa-blue;
+    border-bottom: 1px solid $c-persian-green;
+  }
+
+  .sidebar__section-sub-title {
+    margin: 0 0 10px;
+    font-weight: 700;
+    color: $c-sherpa-blue;
+  }
+
+  .sidebar__images {
+    margin: 20px 0 0;
+  }
+}

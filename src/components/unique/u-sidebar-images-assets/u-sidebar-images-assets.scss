@@ -1,0 +1,30 @@
+.u-sidebar-images-assets {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  .sidebar-images-assets__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    height: 115px;
+    background-color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .sidebar-images-assets__empty-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    z-index: -1;
+    pointer-events: none;
+  }
+}

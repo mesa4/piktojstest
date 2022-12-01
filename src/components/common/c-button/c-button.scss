@@ -1,0 +1,25 @@
+@import "../../../assets/scss/colors";
+
+.c-button {
+  padding: 8px 12px;
+  border-radius: 4px;
+  color: $c-white;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    &:not([disabled]) {
+      opacity: 0.85;
+    }
+  }
+
+  &.button--primary {
+    background-color: $c-persian-green;
+    border: 1px solid $c-persian-green;
+  }
+
+  &.button--secondary {
+    background-color: $c-slate-gray;
+    border: 1px solid $c-slate-gray;
+  }
+}

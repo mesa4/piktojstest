@@ -1,0 +1,131 @@
+@import "../../../assets/scss/colors";
+
+$drop-zone-width: 260px;
+$drop-zone-height: 160px;
+
+.c-file-select-area {
+	display: flex;
+
+	.file-select-area__drop-zone {
+		position: relative;
+		width: $drop-zone-width;
+		height: $drop-zone-height;
+		border: 1px dashed $c-persian-green;
+		border-radius: 4px;
+		background-color: $c-water;
+		transition: all .2s ease-in-out;
+
+		&:hover {
+			border: 1px dashed $c-sherpa-blue;
+
+			.file-select-area__drop-zone-title {
+				color: $c-onyx;
+			}
+		}
+
+		&.file-select-area__drop-zone--over {
+			background: #ff0;
+		}
+	}
+
+	.file-select-area__drop-zone-info {
+		position: absolute;
+		width: 100%;
+		top: 60px;
+		text-align: center;
+	}
+
+	.file-select-area__drop-zone-title {
+		margin: 0 0 10px;
+		color: $c-sherpa-blue;
+		font-size: 20px;
+		transition: all .2s ease-in-out;
+	}
+
+	.file-select-area__drop-zone-extensions {
+		color: $c-sherpa-blue;
+	}
+
+	.file-select-area__drop-zone-input {
+		position: absolute;
+		cursor: pointer;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+	}
+
+	.file-select-area__drop-zone-uploaded {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: $drop-zone-width;
+		height: $drop-zone-height;
+		background-color: $c-water;
+		padding: 0 10px;
+		border: 1px solid $c-persian-green;
+		border-radius: 4px;
+	}
+
+	.file-select-area__drop-zone-uploaded-file-name {
+		margin: 60px 0 0;
+		text-align: center;
+		font-size: 20px;
+		color: $c-sherpa-blue;
+	}
+
+	.file-select-area__drop-zone-uploaded-actions {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 10px;
+		margin: 0 0 10px;
+	}
+
+	.file-select-area__drop-zone-uploaded-button {
+		flex-grow: 1;
+	}
+
+	.file-select-area__drop-zone-uploading {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: $drop-zone-width;
+		height: $drop-zone-height;
+		border: 1px solid $c-persian-green;
+		border-radius: 4px;
+		background-color: $c-water;
+	}
+
+	.file-select-area__drop-zone-uploading-text {
+		font-size: 22px;
+		margin: 0 0 10px;
+		color: #000;
+	}
+
+	.file-select-area__drop-zone-uploading-progress {
+		width: 50%;
+		height: 16px;
+		border-radius: 4px;
+	}
+
+	//.file-select-area__error-message {
+	//  &.p-message {
+	//    &.p-message-error {
+	//      margin: 0;
+	//      background: transparent;
+	//      border-radius: 4px;
+	//    }
+	//
+	//    .p-message-wrapper {
+	//      display: flex;
+	//      justify-content: center;
+	//    }
+	//  }
+	//}
+}

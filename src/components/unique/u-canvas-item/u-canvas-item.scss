@@ -1,0 +1,43 @@
+@import "../../../assets/scss/colors";
+
+.u-canvas-item {
+  position: absolute;
+  border: 1px solid transparent;
+
+  &:hover {
+    border: 1px solid $c-powder-blue;
+  }
+
+  &:active {
+    cursor: move;
+    border: 1px solid $c-persian-green;
+  }
+
+  &::selection {
+    background: transparent;
+  }
+
+  .canvas-item__image {
+    pointer-events: none;
+
+    &:active {
+      cursor: move;
+    }
+
+    &::selection {
+      background: transparent;
+    }
+  }
+
+  .canvas-item__text {
+    pointer-events: none;
+
+    &:active {
+      cursor: move;
+    }
+
+    &::selection {
+      background: transparent;
+    }
+  }
+}

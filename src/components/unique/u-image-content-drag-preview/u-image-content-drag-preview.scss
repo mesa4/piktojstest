@@ -1,0 +1,15 @@
+.u-image-content-drag-preview {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  user-select: none;
+
+  .image-content-drag-preview__image {
+    position: relative;
+    transition: opacity 0.1s ease-in-out;
+  }
+}

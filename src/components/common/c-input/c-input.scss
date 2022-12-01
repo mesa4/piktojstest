@@ -1,0 +1,16 @@
+@import "../../../assets/scss/colors";
+
+.c-input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 8px 12px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  color: $c-onyx;
+  background-color: $c-white;
+  background-clip: padding-box;
+  border: 1px solid $c-persian-green;
+  border-radius: 4px;
+}
